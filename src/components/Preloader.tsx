@@ -1,13 +1,8 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Cormorant_Garamond } from 'next/font/google';
+import Image from 'next/image';
 import styles from './Preloader.module.css';
-
-const cormorant = Cormorant_Garamond({
-  weight: ['300', '400'],
-  subsets: ['latin'],
-});
 
 export default function Preloader() {
   const [count, setCount] = useState(0);
@@ -43,7 +38,8 @@ export default function Preloader() {
       className={styles.preloader}
       style={{ opacity }}
     >
-      <div className={`${styles['preloader-brand']} ${cormorant.className}`}>
+      <div className={styles['preloader-brand']}>
+        <Image src="/images/Logo(B).svg" alt="UltraTechHub" width={120} height={120} className="object-contain rounded-xl" />
         UltraTechHub
       </div>
 

@@ -1,5 +1,12 @@
+import type { Metadata } from 'next';
 import { Outfit, Manrope } from 'next/font/google';
 import './globals.css';
+
+export const metadata: Metadata = {
+  icons: {
+    icon: '/images/Logo.png',
+  },
+};
 
 const outfit = Outfit({
   variable: '--font-outfit',

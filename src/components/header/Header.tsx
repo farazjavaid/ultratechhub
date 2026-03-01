@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
@@ -28,7 +29,7 @@ export default function Header() {
         className={`fixed z-50 left-0 w-full flex items-center justify-between transition-all duration-500 ${
           scrolled
             ? 'top-0 py-3 backdrop-blur-md bg-[rgba(7,7,7,0.88)] border-b border-white/5'
-            : 'bottom-[8rem] py-4 bg-transparent'
+            : 'bottom-[8rem] py-4 max-md:bg-[#0a0a0a] md:bg-transparent'
         }`}
       >
         <div className="w-full mx-auto flex items-center justify-between px-6 lg:px-8" style={{ maxWidth: '1400px' }}>
@@ -38,8 +39,9 @@ export default function Header() {
           {/* Logo */}
           <a
             href="/"
-            className="flex items-center px-4 py-2.5 text-white font-[family-name:var(--font-outfit)] font-semibold text-base tracking-tight whitespace-nowrap"
+            className="flex items-center gap-2 px-4 py-2.5 text-white font-[family-name:var(--font-outfit)] font-semibold text-base tracking-tight whitespace-nowrap"
           >
+            <Image src="/images/Logo.png" alt="UltraTechHub" width={28} height={28} className="object-contain" />
             UltraTechHub
           </a>
 
@@ -59,7 +61,8 @@ export default function Header() {
 
         {/* Mobile: logo pill only */}
         <div className="md:hidden flex items-center rounded-md border border-white/10 bg-[rgba(7,7,7,0.92)] overflow-hidden">
-          <a href="/" className="px-4 py-2.5 text-white font-[family-name:var(--font-outfit)] font-semibold text-sm">
+          <a href="/" className="flex items-center gap-2 px-4 py-2.5 text-white font-[family-name:var(--font-outfit)] font-semibold text-sm">
+            <Image src="/images/Logo.png" alt="UltraTechHub" width={24} height={24} className="object-contain" />
             UltraTechHub
           </a>
         </div>
