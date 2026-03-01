@@ -10,6 +10,8 @@ export default function CustomCursor() {
   const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
+    if (window.matchMedia('(pointer: coarse)').matches) return;
+
     const dot = dotRef.current;
     const ringEl = ringRef.current;
     if (!dot || !ringEl) return;
