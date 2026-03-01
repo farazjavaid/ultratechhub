@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "about": "Om oss",
+    "process": "Processer",
+    "portfolio": "Portfolio",
+    "stats": "Vår statistik",
+    "contact": "Kontakta oss"
+  },
+  "hero": {
+    "badge": "Digital Byrå",
+    "heading1": "Full-Stack Digital Agency",
+    "heading2": "FOR",
+    "tagline": "Vi bygger inte bara — vi lyfter.",
+    "subtitle": "Din vision, vår expertis. Vi förvandlar idéer till högpresterande webbplatser och webbapplikationer.",
+    "cta1": "Starta ett Projekt",
+    "cta2": "Se Vårt Arbete",
+    "stat1": "Levererade Projekt",
+    "stat2": "Års Erfarenhet",
+    "stat3": "Kundnöjdhet"
+  }
+}

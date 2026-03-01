@@ -1,0 +1,55 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #0a0a0a;
+  z-index: 9999;
+  transition: opacity 0.6s ease;
+}
+
+.preloader-brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+}
+
+.preloader-timer__wr {
+  color: #9c9c9c;
+  display: flex;
+  flex-direction: column;
+  gap: 1.39rem;
+  padding-bottom: 0.9rem;
+  position: absolute;
+  inset: auto auto 3.47rem 3.47rem;
+}
+
+.text-16-400-cap {
+  text-transform: uppercase;
+  font-size: 1.11rem;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+}
+
+.text-60-400-cap-timer {
+  color: #fff;
+  letter-spacing: -0.04em;
+  margin-top: -1rem;
+  margin-bottom: -11px;
+  font-size: 4.17rem;
+  font-weight: 400;
+  line-height: 80%;
+}
+
+.progress-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: #9c9c9c;
+  transition: width 0.1s linear;
+}

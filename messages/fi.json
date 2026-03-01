@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "about": "Tietoa meistä",
+    "process": "Prosessit",
+    "portfolio": "Portfolio",
+    "stats": "Tilastomme",
+    "contact": "Ota yhteyttä"
+  },
+  "hero": {
+    "badge": "Digitaalinen Toimisto",
+    "heading1": "Full-Stack Digital Agency",
+    "heading2": "FOR",
+    "tagline": "Emme vain rakenna — me kohotamme.",
+    "subtitle": "Sinun visiosi, meidän asiantuntemuksemme. Muutamme ideat korkeasuoritteisiksi verkkosivustoiksi ja verkkosovelluksiksi.",
+    "cta1": "Aloita Projekti",
+    "cta2": "Katso Töitämme",
+    "stat1": "Toimitettuja Projekteja",
+    "stat2": "Vuoden Kokemus",
+    "stat3": "Asiakastyytyväisyys"
+  }
+}

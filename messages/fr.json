@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "about": "À propos",
+    "process": "Processus",
+    "portfolio": "Portfolio",
+    "stats": "Nos stats",
+    "contact": "Nous contacter"
+  },
+  "hero": {
+    "badge": "Agence Digitale",
+    "heading1": "Full-Stack Digital Agency",
+    "heading2": "FOR",
+    "tagline": "Nous ne construisons pas seulement — nous élevons.",
+    "subtitle": "Votre vision, notre expertise. Nous transformons les idées en sites web et applications web performants.",
+    "cta1": "Démarrer un Projet",
+    "cta2": "Voir Notre Travail",
+    "stat1": "Projets Livrés",
+    "stat2": "Ans d'Expérience",
+    "stat3": "Satisfaction Client"
+  }
+}
