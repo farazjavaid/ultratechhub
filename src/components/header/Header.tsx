@@ -29,7 +29,7 @@ export default function Header() {
         className={`fixed z-50 left-0 w-full flex items-center justify-between transition-all duration-500 ${
           scrolled
             ? 'top-0 py-3 backdrop-blur-md bg-[rgba(7,7,7,0.88)] border-b border-white/5'
-            : 'bottom-[8rem] max-md:bottom-4 py-4 max-md:bg-[#0a0a0a] md:bg-transparent'
+            : 'bottom-[5rem] py-4 max-md:bg-[#0a0a0a] md:bg-transparent'
         }`}
       >
         <div className="w-full mx-auto flex items-center justify-between px-6 lg:px-8" style={{ maxWidth: '1400px' }}>

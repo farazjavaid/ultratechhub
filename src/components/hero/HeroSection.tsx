@@ -30,7 +30,7 @@ export default async function HeroSection() {
         <SplineBackground />
       </div>
 
-      <div className="relative z-10 w-full mx-auto px-6 lg:px-8 pt-14 pb-24 pointer-events-none" style={{ maxWidth: '1440px' }}>
+      <div className="relative z-10 w-full mx-auto px-6 lg:px-8 pt-14 pb-6 md:pb-24 pointer-events-none" style={{ maxWidth: '1440px' }}>
         <div className="flex flex-col gap-8">
 
           {/* Heading */}
