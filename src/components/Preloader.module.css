@@ -13,7 +13,7 @@
   transform: translate(-50%, -50%);
   color: #fff;
   font-family: var(--font-outfit);
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 8vw, 4.5rem);
   font-weight: 600;
   letter-spacing: -0.03em;
   display: flex;
