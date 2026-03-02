@@ -114,16 +114,22 @@ export default function Header() {
           mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
-        {/* Close button */}
-        <button
-          className="absolute top-5 right-6 p-2 text-white"
-          onClick={() => setMobileOpen(false)}
-          aria-label="Close menu"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M18 6L6 18M6 6l12 12" />
-          </svg>
-        </button>
+        {/* Top bar: logo + close */}
+        <div className="absolute top-0 left-0 right-0 flex items-center justify-between px-6 py-4">
+          <a href="/" className="flex items-center gap-2.5" onClick={() => setMobileOpen(false)}>
+            <Image src="/images/Logo.png" alt="UltraTechHub" width={32} height={32} className="object-contain" />
+            <span className="text-white font-[family-name:var(--font-outfit)] font-semibold text-lg tracking-tight">UltraTechHub</span>
+          </a>
+          <button
+            className="p-2 text-white"
+            onClick={() => setMobileOpen(false)}
+            aria-label="Close menu"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
 
         <nav className="flex flex-col items-center gap-8">
           {navLinks.map((link) => (

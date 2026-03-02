@@ -61,3 +61,9 @@
   background: #9c9c9c;
   transition: width 0.1s linear;
 }
+
+@media (max-width: 768px) {
+  .preloader-timer__wr {
+    inset: auto auto 2rem 1rem;
+  }
+}

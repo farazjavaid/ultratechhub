@@ -26,7 +26,7 @@ export default async function HeroSection() {
       />
 
       {/* Spline Background */}
-      <div className="absolute inset-0 z-0 pt-52 scale-150 origin-center">
+      <div className="absolute inset-0 z-0 pt-72 md:pt-52 scale-130 md:scale-150 origin-center">
         <SplineBackground />
       </div>
 
