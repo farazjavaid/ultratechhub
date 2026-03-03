@@ -35,7 +35,7 @@ export default async function LocaleLayout({
       <Preloader />
       <LangSetter locale={locale} />
       <div className="fixed top-6 left-0 right-0 z-[60] hidden md:flex justify-center pointer-events-none">
-        <div className="w-full flex justify-end pointer-events-auto" style={{ maxWidth: '1400px' }}>
+        <div className="w-full flex justify-end pointer-events-auto px-6 lg:px-8" style={{ maxWidth: '1400px' }}>
           <LanguageSwitcher />
         </div>
       </div>

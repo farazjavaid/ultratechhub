@@ -1,18 +1,29 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
   const t = useTranslations('nav');
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', onScroll);
+    const header = headerRef.current;
+    if (!header) return;
+
+    const initTop = window.innerHeight - 80 - header.offsetHeight;
+    header.style.top = `${initTop}px`;
+
+    const onScroll = () => {
+      const newTop = Math.max(0, initTop - window.scrollY);
+      header.style.top = `${newTop}px`;
+      header.classList.toggle('header-scrolled', newTop === 0);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
@@ -26,11 +37,9 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed z-50 left-0 w-full flex items-center justify-between transition-all duration-500 ${
-          scrolled
-            ? 'top-0 py-3 backdrop-blur-md bg-[rgba(7,7,7,0.88)] border-b border-white/5'
-            : 'bottom-[5rem] py-4 max-md:bg-[#0a0a0a] md:bg-transparent'
-        }`}
+        ref={headerRef}
+        className="fixed z-50 left-0 w-full flex items-center justify-between py-4 max-md:bg-[#0a0a0a]"
+        style={{ transition: 'backdrop-filter 0.3s ease, background 0.3s ease' }}
       >
         <div className="w-full mx-auto flex items-center justify-between px-6 lg:px-8" style={{ maxWidth: '1400px' }}>
 
